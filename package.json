@@ -1,0 +1,33 @@
+{
+  "name": "enterprise-collaborative-whiteboard",
+  "version": "1.0.0",
+  "description": "Enterprise-grade real-time collaborative digital workspace with infinite canvas",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
+    "server:dev": "npm --prefix server run dev",
+    "client:dev": "npm --prefix client run dev",
+    "next:dev": "npm --prefix next-whiteboard run dev",
+    "next:build": "npm --prefix next-whiteboard run build",
+    "next:start": "npm --prefix next-whiteboard start",
+    "install:all": "npm install && npm --prefix server install && npm --prefix client install && npm --prefix next-whiteboard install",
+    "build": "npm --prefix client run build && npm --prefix server run build",
+    "build:all": "npm --prefix client run build && npm --prefix server run build && npm --prefix next-whiteboard run build"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "keywords": [
+    "whiteboard",
+    "collaboration",
+    "infinite-canvas",
+    "realtime",
+    "websockets",
+    "react",
+    "nodejs",
+    "socketio"
+  ],
+  "author": "",
+  "license": "MIT"
+}
+
